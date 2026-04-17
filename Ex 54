@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main (){
+   int n;
+   printf ("digite o valor:");
+   scanf ("%d", &n);
+
+   while (n==0){
+        printf ("valor inválido\n digite novamente:");
+        scanf ("%d", n);
+   }
+
+   for (int i = 1; i<=n;i++){
+       printf ("%d\n", i);
+   }
+}
