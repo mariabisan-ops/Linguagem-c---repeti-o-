@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+    float n1,n2, soma=0;
+    printf ("digite a quantidade de mercadorias em estoque:");
+    scanf ("%f", &n1);
+
+    for (int i=1; i<=n1; i++){
+        printf ("digite o valor da mercadoria:\n");
+        scanf ("%f", &n2);
+        soma = soma + n2;
+    }
+
+    printf ("a soma total é: %f", soma);
+    printf ("a media é: %.2f", soma/n1);
+}
