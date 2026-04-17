@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+    int n;
+    float soma = 0, cont = 0;
+    char op = 's';
+    while (op == 's'){
+        printf ("digite o valor da mercadoria:\n");
+        scanf ("%d", &n);
+        
+        soma = soma + n;
+        cont++;
+        printf ("existe mais mercadoria? (s/n)\n");
+        scanf ("%c", &op);
+    }
+    if (cont > 0){
+        printf ("a soma total é: %.2f\n", soma);
+        printf ("a media é: %.2f\n", soma/cont);
+    }
+    else {
+        printf ("não há mercadorias");
+    }
+}
