@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main (){
+    int n1, n2, contador = 0;
+    printf ("digite a quantidade de alunos:");
+    scanf ("%d", &n1);
+
+    for (int i = 1; i<=n1; i++) {
+        printf ("digite a nota:");
+        scanf ("%d", &n2);
+        contador = contador + n2;
+    }
+
+    printf ("a média e: %d", contador/n1);
+}
