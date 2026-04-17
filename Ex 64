@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main (){
+    int n, soma=0;
+
+    for (int i=1; i<=10; i++){
+        printf ("digite um valor: ");
+        scanf ("%d", &n);
+        
+        if (n<40){
+            soma = soma + n;
+        }
+    }
+
+    printf ("soma dos numeros inferiores a 40 = %d", soma);
+}
